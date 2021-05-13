@@ -34,10 +34,10 @@ function App() {
   async function handleRemoveRepository(id) {
   
     const response = await conn.delete('/repositories/'+id);
-    if(response.status == 204){
+    if(response.status === 204){
       console.log('antigo repositories')
       console.log(repositories)
-      const Index = repositories.findIndex(repository => repository.id == id);
+      const Index = repositories.findIndex(repository => repository.id === id);
       if(Index < 0){
         //n encontrou
       return response.status(400).json({error : "Repository Not Found"})

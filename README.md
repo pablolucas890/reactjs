@@ -1,3 +1,5 @@
+<img alt="inicio" src="gif.gif" />
+<hr>
 <h1 align="center"> React.js</h1>
 <h3 align="center">Repositório destinado ao estudo de React.js</h3>
 
